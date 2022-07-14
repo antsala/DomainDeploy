@@ -50,6 +50,12 @@ git clone https://github.com/antsala/DomainDeploy.git
 .\configIP.ps1
 
 # 6. Instalar RSAT.
+#
+# Ejecutar el siguiente script.
+
+.\installRSAT.ps1
+
+
 
 
 
