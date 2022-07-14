@@ -61,6 +61,12 @@ git clone https://github.com/antsala/DomainDeploy.git
 
 .\installRSAT.ps1
 
+# 8. Crear instantáneas.
+#
+# Apagar XYZ-DC1 y WS11. Crear instantánea "Dominio creado".
+
+
+
 
 
 
