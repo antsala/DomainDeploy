@@ -49,7 +49,13 @@ git clone https://github.com/antsala/DomainDeploy.git
 
 .\configIP.ps1
 
-# 6. Instalar RSAT.
+# 6. Volver a clonar el git en el perfil del administrador.
+#
+# Abrir una sesión de PowerShell y ejecutar lo siguiente:
+
+git clone https://github.com/antsala/DomainDeploy.git
+
+# 7. Instalar RSAT.
 #
 # Ejecutar el siguiente script.
 
