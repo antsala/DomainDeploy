@@ -71,21 +71,27 @@ git clone https://github.com/antsala/DomainDeploy.git
 
 ## 7. Instalar RSAT en ***W11***.
 
-Como ***XYZ-DC1*** es un ***Server Core*** no tiene interfaz gráfica. Toda la administración la haremos desde la máquina ***W11**. Nos aseguramos que estamos en ***W11*** y ejecutamos el siguiente script.
+Como ***XYZ-DC1*** es un ***Server Core*** no tiene interfaz gráfica. Toda la administración la haremos desde la máquina ***W11***. Nos aseguramos que estamos en ***W11*** y ejecutamos el siguiente script.
 
 ```
 .\installRSAT.ps1
 ```
 
-# 8. Crear instantáneas.
-#
-# Apagar XYZ-DC1 y WS11. Crear instantánea "Dominio creado".
+## 8. Crear instantáneas.
 
-# 9. Crear objetos en el esquema de ADDS.
-#
-# Desde la VM W11, asegurar que se pueden ejecutar scripts
+Aseguramos el trabajo de configuración realizado hasta el momento. Para ello apagamos ***XYZ-DC1*** y ***WS11***. Creamos sendas instantáneas a las que podemos llamar ***Dominio creado***.
 
+## 9. Crear objetos en el esquema de ADDS.
+
+Vamos a crear los objetos necesarios (usuarios, grupos, etc). Para ello, el VM ***W11***, aseguramos que se pueden ejecutar scripts con el siguiente comando.
+
+```
 Set-ExecutionPolicy -ExecutionPolicy unrestricted
+```
 
-# Ejecutar el siguiente script.
+A continuación ejecutamos el comando que crea los objetos:
+
+```
 .\CreateObjects.ps1 .\ADDS_Schema.json
+```
+
