@@ -30,13 +30,17 @@ function CreateADUser(){
 
     # Creo el usuario en ADDS, si no existe
     try {
-        New-ADUser `
-            -Name $name `
-            -GivenName $firstName `
-            -Surname $lastName `
-            -SamAccountName $samAccountName `
-            -UserPrincipalName $userPrincipalName `
-            -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force)
+        $ADUser = New-ADUser `
+                    -Name $name `
+                    -GivenName $firstName `
+                    -Surname $lastName `
+                    -SamAccountName $samAccountName `
+                    -UserPrincipalName $userPrincipalName `
+                    -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force) `
+                    -PassThru
+
+        # Habilitamos la cuenta en ADDS.
+        Enable-ADAccount $ADUser
 
         Write-Output "Se ha creado el usuario $name"
     } catch {
