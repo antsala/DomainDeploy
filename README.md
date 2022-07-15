@@ -1,3 +1,7 @@
+# Objetivo
+
+La idea es crear un entorno de ADDS sobre el que poder hacer labs de seguridad. Esta guía requiere crear dos máquinas virtuales, una de ellas será un **Controlador de dominio** desplegado en versión **Server Core**. La segunda VM es un Windows 11 se que será usado para configurar el dominio y hacer los labs.
+
 # Configuración de ADDS
 #
 # 1. Crear una VM que hará de DC con la siguiente configuración:
