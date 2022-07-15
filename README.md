@@ -24,7 +24,7 @@ En el entorno de virtualización, crear una máquina con sistema operativo ***Wi
 * IP 192.168.20.11/24, conectado a la red del laboratorio.
 * GW 192.168.20.1
 * DNS 8.8.8.8
-* Renombrar a 'WS11'
+* Renombrar a ***WS11***
 * Agregar 192.168.20.10 a lista [TrustedHosts](https://www.dtonias.com/add-computers-trustedhosts-list-powershell/)
 * Instalar [Chocolatey](https://chocolatey.org/install)
 * Instalar con Chocolatey ***git*** y ***vscode***.
