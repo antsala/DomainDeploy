@@ -39,7 +39,7 @@ git clone https://github.com/antsala/DomainDeploy.git
 ```
 
 Ejecutar el script de despliegue de ADDS, usando las credenciales ***Administrator*** y ***Pa55w.rd***.
-Nota importante: Como XYZ-DC1 se reiniciará, la sesión remota se romperá. Ignorar este error.
+Nota importante: Como ***XYZ-DC1*** se reiniciará, la sesión remota se romperá. Ignorar este error.
 
 ```
 .\deployADDS.ps1
@@ -47,8 +47,8 @@ Nota importante: Como XYZ-DC1 se reiniciará, la sesión remota se romperá. Ign
 
 
 # 4. Crear instantánea.
-#
-#   Apagar XYZ-DC1, crear instantánea "ADDS desplegado", iniciar XYZ-DC1.
+
+Aseguramos la configuración actual creando instantáneas en el entorno de virtualización. Para garantizar la coherencia de la instantánea, apagemos ***XYZ-DC1***. Posteriormente creamos una instantánea que podemos llamar ***ADDS desplegado***. Una ver realizada, iniciamos de nuevo ***XYZ-DC1***.
 
 
 # Seguimos en la *VM de W11*, ahora vamos a agregarla al dominio.
