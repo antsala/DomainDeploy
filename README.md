@@ -67,7 +67,11 @@ git clone https://github.com/antsala/DomainDeploy.git
 
 # 9. Crear objetos en el esquema de ADDS.
 #
-# Desde la VM W11, ejecutar el siguiente script.
+# Desde la VM W11, asegurar que se pueden ejecutar scripts
+
+Set-ExecutionPolicy -ExecutionPolicy unrestricted
+
+# Ejecutar el siguiente script.
 .\CreateObjects.ps1 .\ADDS_Schema.json
 
 
