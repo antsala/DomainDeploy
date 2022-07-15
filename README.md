@@ -61,15 +61,15 @@ Nota: Al finalizar el script, el equipo se reiniciará. Una vez unido al dominio
 .\configIP.ps1
 ```
 
-## 6. Volver a clonar el repo git en el perfil del administrador.
+## 6. Clonar el repo git en el perfil del administrador de ***W11***.
 
-Para tener disponinbles la carpeta de scripts, abrimos una sesión de PowerShell y ejecutamos el siguiente comando:
+Para tener disponinbles la carpeta de scripts, abrimos una sesión de PowerShell y ejecutamos el siguiente comando en la máquina virtual ***W11***:
 
 ```
 git clone https://github.com/antsala/DomainDeploy.git
 ```
 
-## 7. Instalar RSAT.
+## 7. Instalar RSAT en ***W11***.
 
 Como ***XYZ-DC1*** es un ***Server Core*** no tiene interfaz gráfica. Toda la administración la haremos desde la máquina ***W11**. Nos aseguramos que estamos en ***W11*** y ejecutamos el siguiente script.
 
