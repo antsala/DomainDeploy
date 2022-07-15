@@ -73,11 +73,3 @@ Set-ExecutionPolicy -ExecutionPolicy unrestricted
 
 # Ejecutar el siguiente script.
 .\CreateObjects.ps1 .\ADDS_Schema.json
-
-
-
-
-
-
-
-
