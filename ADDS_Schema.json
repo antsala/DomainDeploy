@@ -1,0 +1,22 @@
+{
+    "domain": "xyz.com",
+
+    "groups": [
+        {   
+            "name": "IT"
+        },
+        {
+            "name": "Marketing"
+        }
+    ],
+
+    "users": [
+        {
+            "name": "Antonio Salazar",
+            "password": "Pa55w.rd",
+            "groups": [
+                "IT"
+            ]
+        }
+    ]
+}
