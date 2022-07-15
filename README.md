@@ -2,7 +2,7 @@
 
 La idea es crear un entorno de ADDS sobre el que poder hacer labs de seguridad. Esta guía requiere crear dos máquinas virtuales, una de ellas será un **Controlador de dominio** desplegado en versión **Server Core**. La segunda VM es un **Windows 11** se que será usado para configurar el dominio y hacer los labs.
 
-### 1. Crear el DC.
+## 1. Crear el DC.
 
 Crear en el entorno de virtualización una VM que hará de DC con la siguiente configuración:
 
@@ -15,19 +15,19 @@ Crear en el entorno de virtualización una VM que hará de DC con la siguiente c
 Toda esta configuración se puede hacer desde la utilidad **sconfig**
 
 
+## 2. Crear VM de W11 
 
+En el entorno de virtualización, crear una máquina con sistema operativo Windows 11 Pro con la siguiente configuración:
 
-# 2. Crear una VM de W11 con la siguiente configuración.
-#
-#   Sistema operativo Windows 11 pro.
-#   Saltar comprobación TPM (https://winbuzzer.com/tag/how-to-install-windows-11-without-tpm/)
-#   IP 192.168.20.11/24, conectado a la red de laboratorio.
-#   GW 192.168.20.1
-#   DNS 8.8.8.8
-#   Renombrar a 'WS11'
-#   Agregar 192.168.20.10 a lista TrustedHosts (https://www.dtonias.com/add-computers-trustedhosts-list-powershell/)
-#   Instalar Chocolatey (https://chocolatey.org/install)
-#   Instalar con Chocolatey 'git' y 'vscode'.
+* Sistema operativo Windows 11 pro.
+* Saltar comprobación TPM (https://winbuzzer.com/tag/how-to-install-windows-11-without-tpm/)
+* IP 192.168.20.11/24, conectado a la red de laboratorio.
+* GW 192.168.20.1
+* DNS 8.8.8.8
+* Renombrar a 'WS11'
+* Agregar 192.168.20.10 a lista TrustedHosts (https://www.dtonias.com/add-computers-trustedhosts-list-powershell/)
+* Instalar Chocolatey (https://chocolatey.org/install)
+* Instalar con Chocolatey 'git' y 'vscode'.
 
 
 # 3. Clonar repo git y ejecutar script de despliegue de ADDS.
