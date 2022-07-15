@@ -17,6 +17,13 @@
             "groups": [
                 "IT"
             ]
+        },
+        {
+            "name": "Alice Lice",
+            "password": "Pa55w.rd",
+            "groups": [
+                "Marketing"
+            ]
         }
     ]
 }
