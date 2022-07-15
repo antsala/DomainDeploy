@@ -20,7 +20,7 @@ Toda esta configuración se puede hacer desde la utilidad ***sconfig***
 En el entorno de virtualización, crear una máquina con sistema operativo ***Windows 11 Pro*** con la siguiente configuración:
 
 * Sistema operativo Windows 11 pro.
-* Saltar comprobación TPM (https://winbuzzer.com/tag/how-to-install-windows-11-without-tpm/)
+* [Saltar comprobación del TPM] (https://winbuzzer.com/tag/how-to-install-windows-11-without-tpm/)
 * IP 192.168.20.11/24, conectado a la red del laboratorio.
 * GW 192.168.20.1
 * DNS 8.8.8.8
