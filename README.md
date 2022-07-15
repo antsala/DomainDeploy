@@ -6,11 +6,11 @@ La idea es crear un entorno de ADDS sobre el que poder hacer labs de seguridad. 
 
 Crear en el entorno de virtualización una VM que hará de DC con la siguiente configuración:
 
-* Sistema operativo WS 2022 Standard Server Core.
-* IP 192.168.20.10/24, conectado a la red de laborarorio.
-* GW 192.168.20.1
-* DNS 8.8.8.8
-* Habilitar WinRM y PoswerShell Remoto.
+* Sistema operativo ***WS 2022 Standard Server Core***.
+* IP ***192.168.20.10/24***, conectada a la red de laborarorio.
+* GW ***192.168.20.1***
+* DNS ***8.8.8.8***
+* Habilitar ***WinRM*** para PoswerShell Remoto.
 
 Toda esta configuración se puede hacer desde la utilidad ***sconfig***
 
@@ -19,13 +19,13 @@ Toda esta configuración se puede hacer desde la utilidad ***sconfig***
 
 En el entorno de virtualización, crear una máquina con sistema operativo ***Windows 11 Pro*** con la siguiente configuración:
 
-* Sistema operativo Windows 11 pro.
+* Sistema operativo ***Windows 11 Pro***.
 * [Saltar comprobación del TPM](https://winbuzzer.com/tag/how-to-install-windows-11-without-tpm/)
-* IP 192.168.20.11/24, conectado a la red del laboratorio.
-* GW 192.168.20.1
-* DNS 8.8.8.8
+* IP ***192.168.20.11/24***, conectada a la red del laboratorio.
+* GW ***192.168.20.1***
+* DNS ***8.8.8.8***
 * Renombrar a ***WS11***
-* Agregar 192.168.20.10 a lista [TrustedHosts](https://www.dtonias.com/add-computers-trustedhosts-list-powershell/)
+* Agregar ***192.168.20.10*** a lista [TrustedHosts](https://www.dtonias.com/add-computers-trustedhosts-list-powershell/)
 * Instalar [Chocolatey](https://chocolatey.org/install)
 * Instalar con Chocolatey ***git*** y ***vscode***.
 
