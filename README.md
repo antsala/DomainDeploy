@@ -65,6 +65,11 @@ git clone https://github.com/antsala/DomainDeploy.git
 #
 # Apagar XYZ-DC1 y WS11. Crear instantánea "Dominio creado".
 
+# 9. Crear objetos en el esquema de ADDS.
+#
+# Desde la VM W11, ejecutar el siguiente script.
+.\CreateObjects.ps1 .\ADDS_Schema.json
+
 
 
 

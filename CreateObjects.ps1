@@ -36,7 +36,7 @@ function CreateADUser(){
             -Surname $lastName `
             -SamAccountName $samAccountName `
             -UserPrincipalName $userPrincipalName `
-            -AccountPassword = (ConvertTo-SecureString $password -AsPlainText -Force)
+            -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force)
 
         Write-Output "Se ha creado el usuario $name"
     } catch {
