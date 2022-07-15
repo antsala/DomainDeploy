@@ -83,13 +83,13 @@ Aseguramos el trabajo de configuración realizado hasta el momento. Para ello ap
 
 ## 9. Crear objetos en el esquema de ADDS.
 
-Vamos a crear los objetos necesarios (usuarios, grupos, etc). Para ello, el VM ***W11***, aseguramos que se pueden ejecutar scripts con el siguiente comando.
+Vamos a crear los objetos necesarios (usuarios, grupos, etc). Para ello, en la VM ***W11***, aseguramos que se pueden ejecutar scripts con el siguiente comando.
 
 ```
 Set-ExecutionPolicy -ExecutionPolicy unrestricted
 ```
 
-A continuación ejecutamos el comando que crea los objetos:
+A continuación ejecutamos el comando que crea los objetos.
 
 ```
 .\CreateObjects.ps1 .\ADDS_Schema.json
