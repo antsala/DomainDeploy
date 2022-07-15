@@ -20,7 +20,7 @@ Toda esta configuración se puede hacer desde la utilidad ***sconfig***
 En el entorno de virtualización, crear una máquina con sistema operativo ***Windows 11 Pro*** con la siguiente configuración:
 
 * Sistema operativo Windows 11 pro.
-* [Saltar comprobación del TPM] (https://winbuzzer.com/tag/how-to-install-windows-11-without-tpm/)
+* [Saltar comprobación del TPM](https://winbuzzer.com/tag/how-to-install-windows-11-without-tpm/)
 * IP 192.168.20.11/24, conectado a la red del laboratorio.
 * GW 192.168.20.1
 * DNS 8.8.8.8
@@ -32,13 +32,13 @@ En el entorno de virtualización, crear una máquina con sistema operativo ***Wi
 
 ## 3. Clonar repo git y ejecutar script de despliegue de ADDS.
 
-En la **VM de W11**, clonar el repo de git con el siguiente comando
+En la ***VM de W11***, clonar el repo de git con el siguiente comando
 
 ```
 git clone https://github.com/antsala/DomainDeploy.git
 ```
 
-Ejecutar el script de despliegue de ADDS, usando las credenciales *Administrator* y *Pa55w.rd*.
+Ejecutar el script de despliegue de ADDS, usando las credenciales ***Administrator*** y ***Pa55w.rd***.
 Nota importante: Como XYZ-DC1 se reiniciará, la sesión remota se romperá. Ignorar este error.
 
 ```
