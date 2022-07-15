@@ -51,9 +51,9 @@ Nota importante: Como ***XYZ-DC1*** se reiniciará, la sesión remota se romper�
 Aseguramos la configuración actual creando una instantánea en el entorno de virtualización. Para garantizar la coherencia de la instantánea, apagamos ***XYZ-DC1***. Posteriormente creamos una instantánea, que podemos llamar ***ADDS desplegado***. Una ver realizada, iniciamos de nuevo ***XYZ-DC1***.
 
 
-## 5. Agregar ***W11*** al dominio,
+## 5. Agregar ***W11*** al dominio.
 
-Seguimos en la ***VM de W11***, ahora vamos a agregarla al dominio. Para ello necesitamos que su resolvedor DNS apunte a ***XYZ-DC1***. Ejecutamos el script ***configIP.ps1*** usando como la credencial ***xyz\administrator*** y ***Pa55w.rd***.
+Seguimos en la máquina virtual ***W11***, ahora vamos a agregarla al dominio. Para ello necesitamos que su resolvedor DNS apunte a ***XYZ-DC1***. Ejecutamos el script ***configIP.ps1*** usando la credencial ***xyz\administrator*** y ***Pa55w.rd***.
 
 Nota: Al finalizar el script, el equipo se reiniciará. Una vez unido al dominio, iniciamos sesión con la credencial ***xyz\administrator*** y ***Pa55w.rd***.
 
@@ -61,17 +61,21 @@ Nota: Al finalizar el script, el equipo se reiniciará. Una vez unido al dominio
 .\configIP.ps1
 ```
 
-# 6. Volver a clonar el git en el perfil del administrador.
-#
-# Abrir una sesión de PowerShell y ejecutar lo siguiente:
+## 6. Volver a clonar el repo git en el perfil del administrador.
 
+Para tener disponinbles la carpeta de scripts, abrimos una sesión de PowerShell y ejecutamos el siguiente comando:
+
+```
 git clone https://github.com/antsala/DomainDeploy.git
+```
 
-# 7. Instalar RSAT.
-#
-# Ejecutar el siguiente script.
+## 7. Instalar RSAT.
 
+Como ***XYZ-DC1*** es un ***Server Core*** no tiene interfaz gráfica. Toda la administración la haremos desde la máquina ***W11**. Nos aseguramos que estamos en ***W11*** y ejecutamos el siguiente script.
+
+```
 .\installRSAT.ps1
+```
 
 # 8. Crear instantáneas.
 #
