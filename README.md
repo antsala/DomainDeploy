@@ -46,20 +46,20 @@ Nota importante: Como ***XYZ-DC1*** se reiniciará, la sesión remota se romper�
 ```
 
 
-# 4. Crear instantánea.
+## 4. Crear instantánea.
 
-Aseguramos la configuración actual creando instantáneas en el entorno de virtualización. Para garantizar la coherencia de la instantánea, apagemos ***XYZ-DC1***. Posteriormente creamos una instantánea que podemos llamar ***ADDS desplegado***. Una ver realizada, iniciamos de nuevo ***XYZ-DC1***.
+Aseguramos la configuración actual creando una instantánea en el entorno de virtualización. Para garantizar la coherencia de la instantánea, apagamos ***XYZ-DC1***. Posteriormente creamos una instantánea, que podemos llamar ***ADDS desplegado***. Una ver realizada, iniciamos de nuevo ***XYZ-DC1***.
 
 
-# Seguimos en la *VM de W11*, ahora vamos a agregarla al dominio.
+## 5. Agregar ***W11*** al dominio,
 
-# 5. Cambiar el servidor DNS de W11 para que contacte con 192.168.20.10
-# 
-# Ejecutamos el script usando como credencial 'xyz\administrator' y 'Pa55w.rd'
-# Nota: Al finalizar el script, el equipo se reiniciará. Una vez en el dominio
-#       iniciar sesión con la credencial 'xyz\administrator' y 'Pa55w.rd'.
+Seguimos en la ***VM de W11***, ahora vamos a agregarla al dominio. Para ello necesitamos que su resolvedor DNS apunte a ***XYZ-DC1***. Ejecutamos el script ***configIP.ps1*** usando como la credencial ***xyz\administrator*** y ***Pa55w.rd***.
 
+Nota: Al finalizar el script, el equipo se reiniciará. Una vez unido al dominio, iniciamos sesión con la credencial ***xyz\administrator*** y ***Pa55w.rd***.
+
+```
 .\configIP.ps1
+```
 
 # 6. Volver a clonar el git en el perfil del administrador.
 #
