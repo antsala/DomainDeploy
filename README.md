@@ -2,15 +2,15 @@
 
 La idea es crear un entorno de ADDS sobre el que poder hacer labs de seguridad. Esta guía requiere crear dos máquinas virtuales, una de ellas será un **Controlador de dominio** desplegado en versión **Server Core**. La segunda VM es un **Windows 11** se que será usado para configurar el dominio y hacer los labs.
 
-## 1. Crear el DC.
+### 1. Crear el DC.
 
 Crear en el entorno de virtualización una VM que hará de DC con la siguiente configuración:
 
-    *Sistema operativo WS 2022 Standard Server Core.
-    *IP 192.168.20.10/24, conectado a la red de laborarorio.
-    *GW 192.168.20.1
-    *DNS 8.8.8.8
-    *Habilitar WinRM y PoswerShell Remoto.
+* Sistema operativo WS 2022 Standard Server Core.
+* IP 192.168.20.10/24, conectado a la red de laborarorio.
+* GW 192.168.20.1
+* DNS 8.8.8.8
+* Habilitar WinRM y PoswerShell Remoto.
 
 Toda esta configuración se puede hacer desde la utilidad **sconfig**
 
