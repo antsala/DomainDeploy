@@ -30,17 +30,21 @@ En el entorno de virtualización, crear una máquina con sistema operativo Windo
 * Instalar con Chocolatey 'git' y 'vscode'.
 
 
-# 3. Clonar repo git y ejecutar script de despliegue de ADDS.
-#
-#   En la *VM de W11*, clonar el repo de git.
+## 3. Clonar repo git y ejecutar script de despliegue de ADDS.
 
+En la **VM de W11**, clonar el repo de git con el siguiente comando
+
+```
 git clone https://github.com/antsala/DomainDeploy.git
+```
 
-# Ejecutar el script de despliegue de ADDS.
-# Nota: Usar credenciales 'Administrator' y 'Pa55w.rd'
-# Importante: Como XYZ-DC1 se reiniciará, la sesión remota se romperá. Ignorar este error.
+Ejecutar el script de despliegue de ADDS, usando las credenciales *Administrator* y *Pa55w.rd*.
+Nota importante: Como XYZ-DC1 se reiniciará, la sesión remota se romperá. Ignorar este error.
 
+```
 .\deployADDS.ps1
+```
+
 
 # 4. Crear instantánea.
 #
